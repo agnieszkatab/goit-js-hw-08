@@ -14,17 +14,17 @@ function changeBackgroundColor() {
 }
 
 
-  firstBtn.addEventListener("click", () => {
-    firstBtn.disabled = true;
-    secondBtn.disabled = false;
-    changeBackgroundColor();
-  });
+firstBtn.addEventListener("click", () => {
+  firstBtn.disabled = true;
+  secondBtn.disabled = false;
+  changeBackgroundColor();
+});
 
-  secondBtn.addEventListener("click", () => {
-    firstBtn.disabled = false;
-    secondBtn.disabled = true;
-    clearInterval(changeTime);
-  });
+secondBtn.addEventListener("click", () => {
+  firstBtn.disabled = false;
+  secondBtn.disabled = true;
+  clearInterval(changeTime);
+});
 
 
 
